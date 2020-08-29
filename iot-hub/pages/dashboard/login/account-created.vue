@@ -15,7 +15,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import { FormRules, VForm } from '../../shared/formHelpers'
+import { FormRules, VForm } from '../../../shared/formHelpers'
 import VueRouter from 'vue-router'
 
 @Component
@@ -31,7 +31,7 @@ export default class Login extends Vue {
   public passwordHint = FormRules.passwordHint()
   public submit() {
     this.$router.push({
-      path: '/',
+      path: '/dashboard',
     })
   }
 }

@@ -33,7 +33,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import { FormRules, VForm } from '../../shared/formHelpers'
+import { FormRules, VForm } from '../../../shared/formHelpers'
 import VueRouter from 'vue-router'
 
 @Component
@@ -49,7 +49,7 @@ export default class Login extends Vue {
   public submit() {
     if ((this.$refs.form as VForm).validate()) {
       this.$router.push({
-        path: '/',
+        path: '/dashboard',
       })
     }
   }
